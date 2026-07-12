@@ -1,0 +1,371 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+	"http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="author" content="DellDiagnostics">
+<meta name="generator" content="Use EPSA/mkHtml.bat to convert this file to screenShots.cpp code">
+
+<!-- 
+  Firefox: 
+    QRScan.bmp guard border appears #F8F8F8 (does not match white background) 
+    but IE appears white #FFFFFF (looks good)
+    Font is less bold than IE, unless <b></b> used, then it is nearly identical
+  IE8: 
+    does not support border-radius nor box-shadow (until IE9+)
+ -->
+<title>Demo BIOS/ePSA</title>
+<style type="text/css">
+ .font0 { font:12.00pt "Arial", sans-serif; }
+ .shadow { box-shadow: 10px 10px 5px #888888; }
+table
+{
+    width:600pt;
+    border: 2px solid black;
+    border-radius: 20px;          <!-- Need IE 9+ -->
+    <!--border-collapse:collapse; <!-- Firefox sort of honors this but really undoes border_radius --> 
+}
+th, td
+{
+  padding:5pt 5pt 5pt 10pt; <!-- top, right, bottom, left -->
+}
+</style>
+</head>
+
+<body>
+<table class="font0 shadow" style="height:200pt; box-shadow: 10px 10px 5px #888888;"> <!-- Need IE 9+ box-shadow-->
+
+  <!-- Insert blank space and caption before table -->
+  <br>
+  <caption>ePSA Alert  </caption>
+
+  <!-- Table row. Text box on left, QRscan code on right -->
+  <tr>
+    <!-- Table data, left -->
+    <td valign="top" style="width:460pt; height:150pt">
+      <div >
+        <div style="text-align:left; color:red">
+          <!--using string literal 32 for SPACE to indicate string argument position to EOL-->
+          <b>Fan - The (Video Fan) fan failed to respond correctly          </b></div>
+        <br>
+
+        <div>
+          <span >Continue troubleshooting the system with the information provided below at
+          <a href="https://supportassist.dell.com">https://supportassist.dell.com</a> or with technical support. 
+          Use a mobile device to scan the QR code or click on the link below to continue troubleshooting.</span>
+          </div>
+        <br>
+        <div  style="padding:0pt 10pt 0pt 80pt;">
+          <span>
+            <a href="https://supportassist.dell.com/web?serviceTag=BQXZ353&errCode=0511&ValCode=109067&fru=CN03G9D9CMK000780046A00&uID=0B2B7                    ">
+            <b><br>
+Service Tag : BQXZ353<br>
+Error Code : 2000-0511<br>
+Validation Code : 109067<br>
+<br>
+<br>
+               <br></b></a>
+          </span></div>
+      </div>
+    </td>
+  
+    <!-- Table data, right, QR scan code image cell -->  
+    <!-- Override CSS padding for th, td or else larger left padding makes image not be centered-->
+    <td valign="center" align="center" style="width:200pt; padding:10pt 10pt 10pt 10pt">
+      <div style="width:150pt; height:150pt;">
+        <!-- Stretch image to 150x150 if it is smaller -->
+        <img src="QRScan3.bmp                 "
+             alt="QR Scan Code bitmap missing" 
+             style="width:150pt; height:150pt; " 
+             >
+      </div>
+      </td>
+  </tr>
+
+</table>
+
+<br>
+<table class="font0 shadow" style="background: #dddddd; padding: 10px 5px;">
+  <tr>
+    <td>
+    EPSA Build  4400.13 UEFI ROM, Service Tag: BQXZ353, Node: 0, SystemID: 0906, BIOS: 1.37.0<br>
+<br>
+<br>
+<br>
+[ Cables ]<br>
+EPPID = CN03G9D9CMK000780046A00<br>
+Platform SSID = 0906<br>
+Power Supply = Installed<br>
+CPU = Installed<br>
+Memory Module = Installed<br>
+Functional Memory = Installed<br>
+Memory SPD = Installed<br>
+Keyboard = Installed<br>
+LCD Cable = Installed<br>
+Wireless Switch = On<br>
+Wireless LAN = Installed<br>
+Bluetooth = Installed<br>
+<br>
+[ PCIe ]<br>
+PCIe Physical Slots = 4<br>
+       Bus  1, PCIe Slot 01: Vendor 10DE, Device 1FB9, SubVendor 1028, SubDevice 0906, Tag 0100<br>
+       Bus  3, PCIe Slot 20: Vendor 8086, Device 15DA, SubVendor 1028, SubDevice 0906, Tag 0200<br>
+       Bus  5, PCIe Slot 01: empty<br>
+       Bus  4, PCIe Slot 20: Vendor 8086, Device 15D9, SubVendor 1028, SubDevice 0906, Tag 0400<br>
+       Bus 3A, PCIe Slot 20: Vendor 8086, Device 15DB, SubVendor 1028, SubDevice 0906, Tag 3A00<br>
+       Bus 3B, PCIe Slot 04: Vendor 8086, Device 2526, SubVendor 8086, SubDevice 4010, Tag 3B00<br>
+       Bus 3C, PCIe Slot 08: Vendor 10EC, Device 525A, SubVendor 1028, SubDevice 0906, Tag 3C00<br>
+<br>
+[ LCD/Display Panel ]<br>
+Horizontal resolution = 1920 pixels<br>
+Vertical resolution = 1080 pixels<br>
+EDID Length = 256 bytes<br>
+LCD Panel Manufacture ID = AC10<br>
+LCD Panel Product ID = A262<br>
+LCD Panel supports BIST = No<br>
+<br>
+[ Storage ]<br>
+Hard Drive 1-0-9<br>
+       OEM: KIOXIA, product: KXG60ZNV512G NVMe KIOXIA 512GB, revision: 10604106<br>
+       S/N: 40NA77G3K81L, type: NVMe, size: 512 GB M.2, PPID: CN0KP8C4KGSKK04N08H3A04<br>
+<br>
+[ Boot ]<br>
+BootPath = MBR of Hard Drive 1-0-9<br>
+<br>
+[ USB ]<br>
+Dell Wireless Device = 04CA:00BD<br>
+      Manufacturer = LITEON<br>
+Wireless Cntrlr = 8087:0025<br>
+Dell dock = 0BDA:5487<br>
+      Manufacturer = Dell Inc.<br>
+Jabra Link 390 = 0B0E:2E57<br>
+      Manufacturer = <br>
+      Serial Number = 6CFBED5D9F28<br>
+Dell dock = 0BDA:5413<br>
+      Manufacturer = Dell Inc.<br>
+UDisk            = ABCD:1234<br>
+      Manufacturer = General <br>
+      Serial Number = 	<br>
+Dell dock = 413C:B06F<br>
+Dell Dock WD19S = 413C:B06E<br>
+      Serial Number = 2300<br>
+Integrated Webcam = 0C45:6723<br>
+      Manufacturer = CN09357G8LG0004EAAK6A01<br>
+Dell dock = 0BDA:0487<br>
+      Manufacturer = Dell Inc.<br>
+USB 10/100/1000 LAN = 0BDA:8153<br>
+      Manufacturer = Realtek<br>
+      Serial Number = 111000001<br>
+<br>
+[ Video ]<br>
+       Intel(R) Graphics Controller,<br>
+       Memory Size 7.91 MB, Address: 0x80000000<br>
+<br>
+[ Battery ]<br>
+<br>
+Primary Battery<br>
+ChargeCycles = 407<br>
+Temperature = 41C<br>
+Voltage = 12659mV<br>
+Current = 0mA<br>
+RemainingCapacity =  6.520Ah<br>
+FullCapacity =  6.719Ah<br>
+RelativeCharge =  97%<br>
+BatteryHealth = Excellent<br>
+ManufactureDate = 6/11/2020<br>
+SerialNumber = 6c6<br>
+<br>
+Charger<br>
+ChargerState = Installed<br>
+<br>
+[ Fan ]<br>
+Processor Fan = 5292 RPM<br>
+Video Fan = 0 RPM<br>
+<br>
+[ Processor ]<br>
+Processor sockets = 1<br>
+       U3E1: Intel(R) Core(TM) i7-9850H CPU @ 2.60GHz<br>
+<br>
+[ Memory ]<br>
+System Memory = 32768 MB<br>
+       DIMM A, 16384 MB, DDR4, 2667 MHz, MFG: Samsung, S/N: 3718A637, P/N: M471A2K43DB1-CTD<br>
+       DIMM B, 16384 MB, DDR4, 2667 MHz, MFG: Samsung, S/N: 3718A696, P/N: M471A2K43DB1-CTD<br>
+<br>
+[ System Management ]<br>
+ProcHot Temperature = 100C<br>
+Temperature Sensor = CPU Thermistor<br>
+Temperature Sensor = SODIMM Thermistor<br>
+Temperature Sensor = Ambient Thermistor<br>
+Temperature Sensor = Ambient Thermistor<br>
+Temperature Sensor = Ambient Thermistor<br>
+Temperature Sensor = Ambient Thermistor<br>
+Temperature Sensor = Ambient Thermistor<br>
+Temperature Sensor = HDD Thermistor<br>
+Temperature Sensor = Video Thermistor<br>
+Temperature Sensor = Video Thermistor<br>
+<br>
+[ Diag Events ]<br>
+DIAG 10/27/2025 12:02:03 Fail PSA 4400.13 Error 2000:0511. Validate Code : 109067  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/27/2025 06:58:24 Fail PSA 4400.13 Error 2000:0511. Validate Code : 109067  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/26/2025 07:03:27 Fail PSA 4400.13 Error 2000:0511. Validate Code : 109553  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/25/2025 07:32:53 Fail PSA 4400.13 Error 2000:0511. Validate Code : 109054  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/25/2025 07:04:36 Fail PSA 4400.13 Error 2000:0511. Validate Code : 109054  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/24/2025 00:01:58 Fail PSA 4400.13 Error 2000:0511. Validate Code : 108548  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/23/2025 23:49:22 Fail PSA 4400.13 Error 2000:0511. Validate Code : 75377  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/23/2025 08:29:29 Fail PSA 4400.13 Error 2000:0511. Validate Code : 108406  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/22/2025 07:00:39 Fail PSA 4400.13 Error 2000:0511. Validate Code : 107897  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/21/2025 06:53:37 Fail PSA 4400.13 Error 2000:0511. Validate Code : 107651  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/20/2025 07:02:30 Fail PSA 4400.13 Error 2000:0511. Validate Code : 123048  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/19/2025 07:43:59 Fail PSA 4400.13 Error 2000:0511. Validate Code : 129231  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/18/2025 07:30:12 Fail PSA 4400.13 Error 2000:0511. Validate Code : 129333  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/17/2025 06:55:04 Fail PSA 4400.13 Error 2000:0511. Validate Code : 129850  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/16/2025 07:00:58 Fail PSA 4400.13 Error 2000:0511. Validate Code : 129728  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/15/2025 07:37:02 Fail PSA 4400.13 Error 2000:0511. Validate Code : 126041  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/15/2025 07:02:35 Fail PSA 4400.13 Error 2000:0511. Validate Code : 126041  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/14/2025 08:32:28 Fail PSA 4400.13 Error 2000:0511. Validate Code : 126041  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/13/2025 07:05:45 Fail PSA 4400.13 Error 2000:0511. Validate Code : 108936  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/12/2025 07:18:48 Fail PSA 4400.13 Error 2000:0511. Validate Code : 108936  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/12/2025 06:56:38 Fail PSA 4400.13 Error 2000:0511. Validate Code : 108936  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/10/2025 07:02:20 Fail PSA 4400.13 Error 2000:0511. Validate Code : 120475  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/09/2025 07:08:17 Fail PSA 4400.13 Error 2000:0511. Validate Code : 120475  Fan - The (Video Fan) fan failed to respond correctly<br>
+DIAG 10/08/2025 06:56:42 Fail PSA 4400.13 Error 2000:0511. Validate Code : 120475  Fan - The (Video Fan) fan failed to respond correctly<br>
+<br>
+** Processor Fan - Functional Test **<br>
+Started: 10/27/2025 12:58:37  <br>
+Low  Speed RPM ........: 2500<br>
+High Speed RPM ........: 5100<br>
+Max Speed RPM .........: N/A<br>
+BIOS required in range    0<br>
+BIOS maximum samples      0<br>
+Required samples in range 1<br>
+Maximum samples           30<br>
+Test method ...........: Box<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 4872<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 2818<br>
+Tolerance in percent...: 40<br>
+BIOS required in range    0<br>
+BIOS maximum samples      0<br>
+Required samples in range 1<br>
+Maximum samples           30<br>
+Test method ...........: Box<br>
+Target fan RPM.........: 5100<br>
+Detected fan RPM.......: 3425<br>
+Tolerance in percent...: 40<br>
+Ended: 10/27/2025 12:58:42, Elapsed time: 00:00:05<br>
+Test Results : Pass<br>
+<br>
+<br>
+** Video Fan - Functional Test **<br>
+Started: 10/27/2025 12:58:42  <br>
+Low  Speed RPM ........: 2500<br>
+High Speed RPM ........: 5100<br>
+Max Speed RPM .........: N/A<br>
+BIOS required in range    0<br>
+BIOS maximum samples      0<br>
+Required samples in range 1<br>
+Maximum samples           30<br>
+Test method ...........: Box<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Target fan RPM.........: 2500<br>
+Detected fan RPM.......: 0<br>
+Tolerance in percent...: 40<br>
+Ended: 10/27/2025 12:59:21, Elapsed time: 00:00:39<br>
+Test Results : Fail<br>
+Error Code : 2000-0511<br>
+Validation Code : 109067<br>
+Msg : Fan - The (Video Fan) fan failed to respond correctly<br>
+<br>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

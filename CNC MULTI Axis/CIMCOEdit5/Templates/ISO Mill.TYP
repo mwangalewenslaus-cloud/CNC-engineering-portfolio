@@ -1,0 +1,1124 @@
+
+## INIFILEVERSION #############################################################
+
+[INIFILEVERSION]
+VERSION		= 200
+
+## GENERAL ####################################################################
+
+[GENERAL]
+DESCRIPTION	= ISO Milling
+BASICTYPE	= 0
+PRINTCOL	= 2
+COLINDICATOR	= 60
+HIDEASSIST	= No
+LOADORDER	= 1
+
+## RENUM ######################################################################
+
+[RENUM]
+AUTOINDENT	= Yes
+UNDOLARGE	= No
+INSERTSPACE	= 1
+STARTNEXT	= No
+RENUMEMPTY	= No
+SHOWQUICK	= No
+FORMAT		= 0
+INTERVAL	= 1
+START		= 100
+FROM		= 0
+TO		= 0
+RESTART		= 0
+RENUMCANNED	= No
+PRECEEDESTR	= N
+STARTTRIG	= 
+SKIP		= %,O
+SKIPCONTAIN	= 
+
+## FILECOMPARE ################################################################
+
+[FILECOMPARE]
+SINGLESTEP	= Yes
+IGNORECASE	= Yes
+IGNOREBLOCK	= Yes
+IGNORETNUMERIC	= Yes
+IGNORECOMMENTS	= Yes
+IGNOREWHITESPACE= Yes
+MARKCHANGEONLY	= Yes
+TABSWITCH	= Yes
+SMARTMARK	= Yes
+AUTONEXT	= Yes
+SHOWALL		= Yes
+
+## LOADSAVE ###################################################################
+
+[LOADSAVE]
+AUTOSAVETIME	= 0
+LINEFEEDTYPE	= 0
+DIFFLOADSAVE	= No
+REGDEFAULTEXT	= Yes
+REGOTHEREXT	= Yes
+SAVEEXT		= NC
+LOADEXT		= NCL,ISO,NCF
+LOADPATH	= 
+SAVEPATH	= 
+
+## MACHINETYPE ################################################################
+
+[MACHINETYPE]
+BLOCKSKIP	= /
+COMMENTSTART	= (
+COMMENTEND	= )
+DECIMAL		= .
+FEED		= F
+SPEED		= S
+TOOLCHANGE	= T
+TOOLLOAD	= M6
+ARCTPYE		= 0
+PATHUNIT	= 0
+FEEDUNIT	= 0
+BLOCKSKIPAFTER	= Yes
+RAPIDRATE	= 1000
+
+## BACKPLOT ###################################################################
+
+[BACKPLOT]
+TURNPRG		= No
+DIAPRG		= Yes
+DIAARC		= Yes
+AUTOX		= Yes
+SHOWCYCLES	= Yes
+NULLARCS	= Yes
+PRINTQUALITY	= 2
+TOOLTYPE	= 0
+PRINTLOWCOLOR	= Yes
+PRINTNOWCOLOR	= No
+PLOTMODE	= 2
+DRAWDIMMED	= Yes
+SHOWTOOL	= Yes
+SHOWRAPIDMOVES	= Yes
+SHOWDOTS	= No
+SHOWVECTORS	= No
+HIGHLIGHTARCS	= Yes
+NOPERSPECTIVE	= No
+HIDEPLOTCTRL	= No
+HIDECOORD	= No
+TOOLDIA		= 
+
+## CNCCALC ####################################################################
+
+[CNCCALC]
+ISTURN		= No
+DECIMALS	= 3
+TURNNEGATIVEX	= No
+TURNDIAMETERPRG	= Yes
+TURNDIAMETERARC	= Yes
+ARCTYPE		= 0
+GRIDON		= Yes
+AXISON		= Yes
+MODALXY		= No
+MODALZ		= Yes
+ALWAYSSIGN	= No
+SHOWSUBGRID	= Yes
+GRIDSIZE	= 10.000000
+TRAILZEROS	= 0
+METRICIMPERIAL	= 0
+MACROHEAD	= 
+MACROTAIL	= 
+DRAWDIR		= 
+
+## NCBASE #####################################################################
+
+[NCBASE]
+GROUPS		= 
+STORE		= No
+ID		= 0
+
+## MACROINF ###################################################################
+
+[MACROINF]
+COUNT		= 33
+CURRENT		= 12
+
+## COLORS #####################################################################
+
+[COLORS]
+USE		= 1
+INBLOCK		= 1
+USEMODALCOLORS	= 1
+COUNT		= 30
+COLOR0		= 0
+COLOR1		= 16777215
+COLOR2		= 65535
+COLOR3		= 12582912
+COLOR4		= 8388608
+COLOR5		= 192
+COLOR6		= 49152
+COLOR7		= 12582912
+COLOR8		= 12582912
+COLOR9		= 16744576
+COLOR19		= 255
+COLOR10		= 16711935
+COLOR11		= 0
+COLOR12		= 8388736
+COLOR13		= 8421504
+COLOR14		= 16777215
+COLOR15		= 65535
+COLOR16		= 65535
+COLOR17		= 3158064
+COLOR18		= 8421504
+COLOR20		= 0
+COLOR21		= 16777215
+COLOR22		= 12632256
+COLOR23		= 11579568
+COLOR24		= 57344
+COLOR25		= 16777215
+COLOR26		= 255
+COLOR27		= 16711680
+COLOR28		= 16777088
+COLOR29		= 65535
+
+## MACRO000 ###################################################################
+
+[MACRO000]
+NAME		= Program start
+TEXT		= %ÿ$1ÿ(DATE: $DATETIME)ÿ(PROGRAMMER: $7)ÿ# G00 G40 G49 G80 G90ÿ# $2 M06ÿ# $3 M03ÿ# G00 $4 $5ÿ# G00 G43 $8 $6
+PARAMCOUNT	= 8
+000DESC		= O number
+000REQUIRED	= Yes
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= No
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= O
+000SUFFIX	= 
+000MIN		= 1000
+000MAX		= 6999
+000DECIMALS	= 0
+000LASTVAL	= 
+001DESC		= Tool number
+001REQUIRED	= Yes
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= No
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= T
+001SUFFIX	= 
+001MIN		= 
+001MAX		= 
+001DECIMALS	= 0
+001LASTVAL	= 
+002DESC		= Spindle speed
+002REQUIRED	= Yes
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= No
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= S
+002SUFFIX	= 
+002MIN		= 50
+002MAX		= 60000
+002DECIMALS	= 0
+002LASTVAL	= 
+003DESC		= X starting position
+003REQUIRED	= Yes
+003USESIGN	= No
+003UPPERCASE	= Yes
+003ALLOWNEG	= Yes
+003ALLOWALPHA	= No
+003REMEBER	= No
+003DEFAULT	= 
+003PREFIX	= X
+003SUFFIX	= 
+003MIN		= 
+003MAX		= 
+003DECIMALS	= -1
+003LASTVAL	= 
+004DESC		= Y starting position
+004REQUIRED	= Yes
+004USESIGN	= No
+004UPPERCASE	= Yes
+004ALLOWNEG	= Yes
+004ALLOWALPHA	= No
+004REMEBER	= No
+004DEFAULT	= 
+004PREFIX	= Y
+004SUFFIX	= 
+004MIN		= 
+004MAX		= 
+004DECIMALS	= -1
+004LASTVAL	= 
+005DESC		= Z starting position
+005REQUIRED	= Yes
+005USESIGN	= No
+005UPPERCASE	= Yes
+005ALLOWNEG	= Yes
+005ALLOWALPHA	= No
+005REMEBER	= No
+005DEFAULT	= 
+005PREFIX	= Z
+005SUFFIX	= 
+005MIN		= 
+005MAX		= 
+005DECIMALS	= -1
+005LASTVAL	= 
+006DESC		= Programmer name
+006REQUIRED	= Yes
+006USESIGN	= No
+006UPPERCASE	= Yes
+006ALLOWNEG	= Yes
+006ALLOWALPHA	= Yes
+006REMEBER	= Yes
+006DEFAULT	= 
+006PREFIX	= 
+006SUFFIX	= 
+006MIN		= 
+006MAX		= 
+006DECIMALS	= -1
+006LASTVAL	= 
+007DESC		= Tool length register
+007REQUIRED	= Yes
+007USESIGN	= No
+007UPPERCASE	= Yes
+007ALLOWNEG	= No
+007ALLOWALPHA	= No
+007REMEBER	= No
+007DEFAULT	= 
+007PREFIX	= H
+007SUFFIX	= 
+007MIN		= 
+007MAX		= 
+007DECIMALS	= 0
+007LASTVAL	= 
+
+## MACRO001 ###################################################################
+
+[MACRO001]
+NAME		= Tool change
+TEXT		= ÿ# M05 M09ÿ# G00 G28 G91 Z0ÿ# G00 G90ÿ# $1 M06ÿ# $2 M03ÿ# G00 $3 $4ÿ# G00 G43 $6 $5
+PARAMCOUNT	= 6
+000DESC		= Tool number
+000REQUIRED	= Yes
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= No
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= T
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= 0
+000LASTVAL	= 
+001DESC		= Spindle speed
+001REQUIRED	= Yes
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= No
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= S
+001SUFFIX	= 
+001MIN		= 50
+001MAX		= 60000
+001DECIMALS	= 0
+001LASTVAL	= 
+002DESC		= X starting position
+002REQUIRED	= Yes
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= Yes
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= X
+002SUFFIX	= 
+002MIN		= 
+002MAX		= 
+002DECIMALS	= -1
+002LASTVAL	= 
+003DESC		= Y starting position
+003REQUIRED	= Yes
+003USESIGN	= No
+003UPPERCASE	= Yes
+003ALLOWNEG	= Yes
+003ALLOWALPHA	= No
+003REMEBER	= No
+003DEFAULT	= 
+003PREFIX	= Y
+003SUFFIX	= 
+003MIN		= 
+003MAX		= 
+003DECIMALS	= -1
+003LASTVAL	= 
+004DESC		= Z starting position
+004REQUIRED	= Yes
+004USESIGN	= No
+004UPPERCASE	= Yes
+004ALLOWNEG	= Yes
+004ALLOWALPHA	= No
+004REMEBER	= No
+004DEFAULT	= 
+004PREFIX	= Z
+004SUFFIX	= 
+004MIN		= 
+004MAX		= 
+004DECIMALS	= -1
+004LASTVAL	= 
+005DESC		= Tool length register
+005REQUIRED	= Yes
+005USESIGN	= No
+005UPPERCASE	= Yes
+005ALLOWNEG	= No
+005ALLOWALPHA	= No
+005REMEBER	= No
+005DEFAULT	= 
+005PREFIX	= H
+005SUFFIX	= 
+005MIN		= 
+005MAX		= 
+005DECIMALS	= 0
+005LASTVAL	= 
+
+## MACRO002 ###################################################################
+
+[MACRO002]
+NAME		= End of program
+TEXT		= ÿ# M05 M09ÿ# G00 G28 G91 Z0ÿ# G00 G90ÿ# M30ÿ%
+PARAMCOUNT	= 0
+
+## MACRO003 ###################################################################
+
+[MACRO003]
+NAME		= Feed rate
+TEXT		= $1
+PARAMCOUNT	= 1
+000DESC		= Feed rate
+000REQUIRED	= Yes
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= No
+000ALLOWALPHA	= No
+000REMEBER	= Yes
+000DEFAULT	= 
+000PREFIX	= F
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+
+## MACRO004 ###################################################################
+
+[MACRO004]
+NAME		= G00 Rapid move
+TEXT		= ÿ# G00 $1 $2 $3
+PARAMCOUNT	= 3
+000DESC		= X coordinate
+000REQUIRED	= No
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= Yes
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= X
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+001DESC		= Y Coordinate
+001REQUIRED	= No
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= Yes
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= Y
+001SUFFIX	= 
+001MIN		= 
+001MAX		= 
+001DECIMALS	= -1
+001LASTVAL	= 
+002DESC		= Z coordinate
+002REQUIRED	= No
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= Yes
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= Z
+002SUFFIX	= 
+002MIN		= 
+002MAX		= 
+002DECIMALS	= -1
+002LASTVAL	= 
+
+## MACRO005 ###################################################################
+
+[MACRO005]
+NAME		= G01 Linear move
+TEXT		= ÿ# G01 $1 $2 $3
+PARAMCOUNT	= 3
+000DESC		= X coordinate
+000REQUIRED	= No
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= Yes
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= X
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+001DESC		= Y coordinate
+001REQUIRED	= No
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= Yes
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= Y
+001SUFFIX	= 
+001MIN		= 
+001MAX		= 
+001DECIMALS	= -1
+001LASTVAL	= 
+002DESC		= Z coordinate
+002REQUIRED	= No
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= Yes
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= Z
+002SUFFIX	= 
+002MIN		= 
+002MAX		= 
+002DECIMALS	= -1
+002LASTVAL	= 
+
+## MACRO006 ###################################################################
+
+[MACRO006]
+NAME		= G02 Clockwise arc move
+TEXT		= ÿ# G02 $1 $2 $3 $4
+PARAMCOUNT	= 4
+000DESC		= X coordinate
+000REQUIRED	= No
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= Yes
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= X
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+001DESC		= Y coordinate
+001REQUIRED	= No
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= Yes
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= Y
+001SUFFIX	= 
+001MIN		= 
+001MAX		= 
+001DECIMALS	= -1
+001LASTVAL	= 
+002DESC		= Z coordinate
+002REQUIRED	= No
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= Yes
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= Z
+002SUFFIX	= 
+002MIN		= 
+002MAX		= 
+002DECIMALS	= -1
+002LASTVAL	= 
+003DESC		= Arc radius (set negative for arc sweep greater than 180 degrees)
+003REQUIRED	= Yes
+003USESIGN	= No
+003UPPERCASE	= Yes
+003ALLOWNEG	= Yes
+003ALLOWALPHA	= No
+003REMEBER	= Yes
+003DEFAULT	= 
+003PREFIX	= R
+003SUFFIX	= 
+003MIN		= 
+003MAX		= 
+003DECIMALS	= -1
+003LASTVAL	= 
+
+## MACRO007 ###################################################################
+
+[MACRO007]
+NAME		= G03 Counterclockwise arc move
+TEXT		= ÿ# G03 $1 $2 $3 $4
+PARAMCOUNT	= 4
+000DESC		= X coordinate
+000REQUIRED	= No
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= Yes
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= X
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+001DESC		= Y coordinate
+001REQUIRED	= No
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= Yes
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= Y
+001SUFFIX	= 
+001MIN		= 
+001MAX		= 
+001DECIMALS	= -1
+001LASTVAL	= 
+002DESC		= Z coordinate
+002REQUIRED	= No
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= Yes
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= Z
+002SUFFIX	= 
+002MIN		= 
+002MAX		= 
+002DECIMALS	= -1
+002LASTVAL	= 
+003DESC		= Arc radius (set negative for arc sweep greater than 180 degrees)
+003REQUIRED	= Yes
+003USESIGN	= No
+003UPPERCASE	= Yes
+003ALLOWNEG	= Yes
+003ALLOWALPHA	= No
+003REMEBER	= Yes
+003DEFAULT	= 
+003PREFIX	= R
+003SUFFIX	= 
+003MIN		= 
+003MAX		= 
+003DECIMALS	= -1
+003LASTVAL	= 
+
+## MACRO008 ###################################################################
+
+[MACRO008]
+NAME		= G04 Dwell
+TEXT		= ÿ# G04 $1
+PARAMCOUNT	= 1
+000DESC		= Dwell time (seconds)
+000REQUIRED	= Yes
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= No
+000ALLOWALPHA	= No
+000REMEBER	= Yes
+000DEFAULT	= 
+000PREFIX	= X
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+
+## MACRO009 ###################################################################
+
+[MACRO009]
+NAME		= G17 XY plane specification
+TEXT		= G17
+PARAMCOUNT	= 0
+
+## MACRO010 ###################################################################
+
+[MACRO010]
+NAME		= G18 XZ plane specification
+TEXT		= G18
+PARAMCOUNT	= 0
+
+## MACRO011 ###################################################################
+
+[MACRO011]
+NAME		= G19 YZ plane specification
+TEXT		= G19
+PARAMCOUNT	= 0
+
+## MACRO012 ###################################################################
+
+[MACRO012]
+NAME		= G28 Machine coordinate mode
+TEXT		= G28
+PARAMCOUNT	= 0
+
+## MACRO013 ###################################################################
+
+[MACRO013]
+NAME		= G40 Radius compensation off
+TEXT		= G40
+PARAMCOUNT	= 0
+
+## MACRO014 ###################################################################
+
+[MACRO014]
+NAME		= G41 Radius compensation, left
+TEXT		= G41 $1
+PARAMCOUNT	= 1
+000DESC		= Tool diameter register
+000REQUIRED	= Yes
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= No
+000ALLOWALPHA	= No
+000REMEBER	= Yes
+000DEFAULT	= 
+000PREFIX	= D
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= 0
+000LASTVAL	= 
+
+## MACRO015 ###################################################################
+
+[MACRO015]
+NAME		= G42 Radius compensation, right
+TEXT		= G42 $1
+PARAMCOUNT	= 1
+000DESC		= Tool diameter register
+000REQUIRED	= Yes
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= No
+000ALLOWALPHA	= No
+000REMEBER	= Yes
+000DEFAULT	= 
+000PREFIX	= D
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= 0
+000LASTVAL	= 
+
+## MACRO016 ###################################################################
+
+[MACRO016]
+NAME		= G43 Tool length compensation
+TEXT		= G43 $1
+PARAMCOUNT	= 1
+000DESC		= Tool length register
+000REQUIRED	= Yes
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= No
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= H
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= 0
+000LASTVAL	= 
+
+## MACRO017 ###################################################################
+
+[MACRO017]
+NAME		= G49 Tool length compensation off
+TEXT		= G49
+PARAMCOUNT	= 0
+
+## MACRO018 ###################################################################
+
+[MACRO018]
+NAME		= G81 Drilling
+TEXT		= ÿ# G81 $1 $2 $3 $4 $5 $6
+PARAMCOUNT	= 6
+000DESC		= X coordinate
+000REQUIRED	= No
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= Yes
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= X
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+001DESC		= Y coordinate
+001REQUIRED	= No
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= Yes
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= Y
+001SUFFIX	= 
+001MIN		= 
+001MAX		= 
+001DECIMALS	= -1
+001LASTVAL	= 
+002DESC		= Z depth (absolute)
+002REQUIRED	= Yes
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= Yes
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= Z
+002SUFFIX	= 
+002MIN		= 
+002MAX		= 
+002DECIMALS	= -1
+002LASTVAL	= 
+003DESC		= R reference height (absolute)
+003REQUIRED	= Yes
+003USESIGN	= No
+003UPPERCASE	= Yes
+003ALLOWNEG	= Yes
+003ALLOWALPHA	= No
+003REMEBER	= Yes
+003DEFAULT	= 
+003PREFIX	= R
+003SUFFIX	= 
+003MIN		= 
+003MAX		= 
+003DECIMALS	= -1
+003LASTVAL	= 
+004DESC		= P dwell time (seconds)
+004REQUIRED	= No
+004USESIGN	= No
+004UPPERCASE	= Yes
+004ALLOWNEG	= No
+004ALLOWALPHA	= No
+004REMEBER	= Yes
+004DEFAULT	= 
+004PREFIX	= P
+004SUFFIX	= 
+004MIN		= 
+004MAX		= 
+004DECIMALS	= -1
+004LASTVAL	= 
+005DESC		= Feed rate
+005REQUIRED	= Yes
+005USESIGN	= No
+005UPPERCASE	= Yes
+005ALLOWNEG	= No
+005ALLOWALPHA	= No
+005REMEBER	= Yes
+005DEFAULT	= 
+005PREFIX	= F
+005SUFFIX	= 
+005MIN		= 
+005MAX		= 
+005DECIMALS	= -1
+005LASTVAL	= 
+
+## MACRO019 ###################################################################
+
+[MACRO019]
+NAME		= G82 Peck drilling
+TEXT		= ÿ# G82 $1 $2 $3 $4 $6 $5 $7
+PARAMCOUNT	= 7
+000DESC		= X coordinate
+000REQUIRED	= No
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= Yes
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= X
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+001DESC		= Y coordinate
+001REQUIRED	= No
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= Yes
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= Y
+001SUFFIX	= 
+001MIN		= 
+001MAX		= 
+001DECIMALS	= -1
+001LASTVAL	= 
+002DESC		= Z depth (absolute)
+002REQUIRED	= Yes
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= Yes
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= Z
+002SUFFIX	= 
+002MIN		= 
+002MAX		= 
+002DECIMALS	= -1
+002LASTVAL	= 
+003DESC		= R reference height (absolute)
+003REQUIRED	= Yes
+003USESIGN	= No
+003UPPERCASE	= Yes
+003ALLOWNEG	= Yes
+003ALLOWALPHA	= No
+003REMEBER	= Yes
+003DEFAULT	= 
+003PREFIX	= R
+003SUFFIX	= 
+003MIN		= 
+003MAX		= 
+003DECIMALS	= -1
+003LASTVAL	= 
+004DESC		= P dwell time (seconds)
+004REQUIRED	= No
+004USESIGN	= No
+004UPPERCASE	= Yes
+004ALLOWNEG	= No
+004ALLOWALPHA	= No
+004REMEBER	= Yes
+004DEFAULT	= 
+004PREFIX	= P
+004SUFFIX	= 
+004MIN		= 
+004MAX		= 
+004DECIMALS	= -1
+004LASTVAL	= 
+005DESC		= Q peck step
+005REQUIRED	= No
+005USESIGN	= No
+005UPPERCASE	= Yes
+005ALLOWNEG	= No
+005ALLOWALPHA	= No
+005REMEBER	= Yes
+005DEFAULT	= 
+005PREFIX	= Q
+005SUFFIX	= 
+005MIN		= 
+005MAX		= 
+005DECIMALS	= -1
+005LASTVAL	= 
+006DESC		= Feed rate
+006REQUIRED	= Yes
+006USESIGN	= No
+006UPPERCASE	= Yes
+006ALLOWNEG	= No
+006ALLOWALPHA	= No
+006REMEBER	= Yes
+006DEFAULT	= 
+006PREFIX	= F
+006SUFFIX	= 
+006MIN		= 
+006MAX		= 
+006DECIMALS	= -1
+006LASTVAL	= 
+
+## MACRO020 ###################################################################
+
+[MACRO020]
+NAME		= G84 Tapping
+TEXT		= ÿ# G84 $1 $2 $3 $4 $5
+PARAMCOUNT	= 5
+000DESC		= X coordinate
+000REQUIRED	= No
+000USESIGN	= No
+000UPPERCASE	= Yes
+000ALLOWNEG	= Yes
+000ALLOWALPHA	= No
+000REMEBER	= No
+000DEFAULT	= 
+000PREFIX	= X
+000SUFFIX	= 
+000MIN		= 
+000MAX		= 
+000DECIMALS	= -1
+000LASTVAL	= 
+001DESC		= Y coordinate
+001REQUIRED	= No
+001USESIGN	= No
+001UPPERCASE	= Yes
+001ALLOWNEG	= Yes
+001ALLOWALPHA	= No
+001REMEBER	= No
+001DEFAULT	= 
+001PREFIX	= Y
+001SUFFIX	= 
+001MIN		= 
+001MAX		= 
+001DECIMALS	= -1
+001LASTVAL	= 
+002DESC		= Z depth (absolute)
+002REQUIRED	= Yes
+002USESIGN	= No
+002UPPERCASE	= Yes
+002ALLOWNEG	= Yes
+002ALLOWALPHA	= No
+002REMEBER	= No
+002DEFAULT	= 
+002PREFIX	= Z
+002SUFFIX	= 
+002MIN		= 
+002MAX		= 
+002DECIMALS	= -1
+002LASTVAL	= 
+003DESC		= R reference height (absolute)
+003REQUIRED	= Yes
+003USESIGN	= No
+003UPPERCASE	= Yes
+003ALLOWNEG	= Yes
+003ALLOWALPHA	= No
+003REMEBER	= Yes
+003DEFAULT	= 
+003PREFIX	= R
+003SUFFIX	= 
+003MIN		= 
+003MAX		= 
+003DECIMALS	= -1
+003LASTVAL	= 
+004DESC		= E Thread pitch
+004REQUIRED	= Yes
+004USESIGN	= No
+004UPPERCASE	= Yes
+004ALLOWNEG	= No
+004ALLOWALPHA	= No
+004REMEBER	= Yes
+004DEFAULT	= 
+004PREFIX	= E
+004SUFFIX	= 
+004MIN		= 
+004MAX		= 
+004DECIMALS	= -1
+004LASTVAL	= 
+
+## MACRO021 ###################################################################
+
+[MACRO021]
+NAME		= G80 Cancel drill cycle
+TEXT		= ÿ# G80
+PARAMCOUNT	= 0
+
+## MACRO022 ###################################################################
+
+[MACRO022]
+NAME		= G90 Absolute coordinates mode
+TEXT		= G90
+PARAMCOUNT	= 0
+
+## MACRO023 ###################################################################
+
+[MACRO023]
+NAME		= G91 Incremental coordinates mode
+TEXT		= G91
+PARAMCOUNT	= 0
+
+## MACRO024 ###################################################################
+
+[MACRO024]
+NAME		= M00 Program stop
+TEXT		= ÿ# M00
+PARAMCOUNT	= 0
+
+## MACRO025 ###################################################################
+
+[MACRO025]
+NAME		= M01 Optional stop
+TEXT		= ÿ# M01
+PARAMCOUNT	= 0
+
+## MACRO026 ###################################################################
+
+[MACRO026]
+NAME		= M02 Program end
+TEXT		= ÿ# M02
+PARAMCOUNT	= 0
+
+## MACRO027 ###################################################################
+
+[MACRO027]
+NAME		= M03 Spindle start clockwise
+TEXT		= M03
+PARAMCOUNT	= 0
+
+## MACRO028 ###################################################################
+
+[MACRO028]
+NAME		= M04 Spindle start counter-clockwise
+TEXT		= M04
+PARAMCOUNT	= 0
+
+## MACRO029 ###################################################################
+
+[MACRO029]
+NAME		= M05 Spindle stop
+TEXT		= ÿ# M05
+PARAMCOUNT	= 0
+
+## MACRO030 ###################################################################
+
+[MACRO030]
+NAME		= M08 Coolant on
+TEXT		= M08
+PARAMCOUNT	= 0
+
+## MACRO031 ###################################################################
+
+[MACRO031]
+NAME		= M09 Coolant off
+TEXT		= M09
+PARAMCOUNT	= 0
+
+## MACRO032 ###################################################################
+
+[MACRO032]
+NAME		= M30 Program end with spindle and coolant stop and tape rewind
+TEXT		= ÿ# M30
+PARAMCOUNT	= 0

@@ -1,0 +1,178 @@
+###############################################################################
+#                                                                             #
+# CIMCO Machine description - DO NOT EDIT !!!                                 #
+#                                                                             #
+############################################################ Who did this? ####
+
+[INIFILEVERSION]
+VERSION		= 200
+
+## INFO #######################################################################
+
+[INFO]
+DESCRIPTION     = Farley Plasma/Laser cutter
+PROTOCOL	= FARLEYPROTOCOL
+ACTIVE		= Yes
+MACHINEID	= 
+SERVERID	= 
+
+## CONTROLINFO ################################################################
+
+[CONTROLINFO]
+QUEUECOUNTER	= 1
+SENDDIR		= 
+RECVDIR		= 
+SENDDIRMODE	= No
+RECVDIRMODE	= No
+SYNCSENDRECV	= No
+
+## COMPORTSETTINGS ############################################################
+
+[COMPORTSETTINGS]
+COMPORT		= COM1
+BAUDRATE	= 9600
+STOPBITS	= 1
+DATABITS	= 8
+PARITY		= NONE
+DTR_ENABLED	= No
+RTS_ENABLED	= No
+FLOWCONTROL	= NONE
+USEPARITY	= No
+PARITYINSERT	= 
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATESAFEXOFF	= No
+EMULATEWAITXON	= Yes
+HWFLOWTYPE	= 
+
+## COMPORTSETTINGS DEFAULT ####################################################
+
+[COMPORTSETTINGS DEFAULT]
+COMPORT		= COM1
+BAUDRATE	= 9600
+STOPBITS	= 1
+DATABITS	= 8
+PARITY		= NONE
+DTR_ENABLED	= No
+RTS_ENABLED	= No
+FLOWCONTROL	= NONE
+USEPARITY	= No
+PARITYINSERT	= 
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATESAFEXOFF	= No
+EMULATEWAITXON	= Yes
+HWFLOWTYPE	= 
+
+## DIRECTORIES ################################################################
+
+[DIRECTORIES]
+ENVLIST		= MACHINE,LOG,FAILED,DATA,INCOMING,BACKUP,SENDROOT,RECVROOT,TEMPDIR
+MACHINE		= $ROOT\$PORTNAME
+LOG		= $MACHINE\Log
+INCOMING	= $DATA
+FAILED		= $MACHINE\Failed
+DATA		= $MACHINE
+BACKUP		= $MACHINE\Backup
+AUTOCREATE	= Yes
+SENDROOT	= $DATA
+RECVROOT	= $DATA
+TEMPDIR		= $TEMP
+USERECVROOT	= No
+RECVROOTONLY	= No
+USESENDROOT	= No
+SENDROOTONLY	= No
+USETEMPDIR	= Yes
+USETEMPDIRNET	= No
+SENDEXT		= 
+RECVEXT		= 
+SENDEXTONLY	= No
+RECVEXTONLY	= No
+
+## DIRECTORIES DEFAULT ########################################################
+
+[DIRECTORIES DEFAULT]
+ENVLIST		= MACHINE,LOG,FAILED,DATA,INCOMING,BACKUP,SENDROOT,RECVROOT,TEMPDIR
+MACHINE		= $ROOT\$PORTNAME
+LOG		= $MACHINE\Log
+INCOMING	= $DATA
+FAILED		= $MACHINE\Failed
+DATA		= $MACHINE
+BACKUP		= $MACHINE\Backup
+AUTOCREATE	= Yes
+SENDROOT	= $DATA
+RECVROOT	= $DATA
+TEMPDIR		= $TEMP
+USERECVROOT	= No
+RECVROOTONLY	= No
+USESENDROOT	= No
+SENDROOTONLY	= No
+USETEMPDIR	= Yes
+USETEMPDIRNET	= No
+SENDEXT		= 
+RECVEXT		= 
+SENDEXTONLY	= No
+RECVEXTONLY	= No
+
+## PORTSETTINGS ###############################################################
+
+[PORTSETTINGS]
+DISABLERECEIVE	= No
+SAVEFAILED	= No
+KEEPFAILEDCOUNT	= 10
+EXTENSION	= NC
+PARITY		= NONE
+DATABITS	= 8
+SENDDIRMODE	= 0
+RECVDIRMODE	= 0
+REPLACEINREQ	= No
+
+## PORTSETTINGS DEFAULT #######################################################
+
+[PORTSETTINGS DEFAULT]
+DISABLERECEIVE	= No
+SAVEFAILED	= No
+KEEPFAILEDCOUNT	= 10
+EXTENSION	= NC
+PARITY		= NONE
+DATABITS	= 8
+SENDDIRMODE	= 0
+RECVDIRMODE	= 0
+REPLACEINREQ	= No
+
+## DIRECTORYLIST ##############################################################
+
+[DIRECTORYLIST]
+DIRCOUNT	= 1
+RELATIVEPATHS	= Yes
+PARITY		= NONE
+DATABITS	= 8
+DIRECTORY0	= $DATA
+RECURSIVE0	= Yes
+
+## DIRECTORYLIST DEFAULT ######################################################
+
+[DIRECTORYLIST DEFAULT]
+DIRCOUNT	= 1
+RELATIVEPATHS	= Yes
+PARITY		= NONE
+DATABITS	= 8
+DIRECTORY0	= $DATA
+RECURSIVE0	= Yes
+
+## BACKUP #####################################################################
+
+[BACKUP]
+BACKUPENABLED	= No
+BACKUPDIRS	= No
+BACKUPTYPE	= 0
+BACKUPCOUNT	= 10
+BACKUPNAMING	= 0
+BACKUPDIR	= $BACKUP
+BACKUPPREFIX	= 
+BACKUPPOSTFIX	= 
+BACKUPAUTOCREATE= Yes
+BACKUPPATHMODE	= 0
+BACKUPPATHSUFFIX= 
+PARITY		= NONE
+DATABITS	= 8

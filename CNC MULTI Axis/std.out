@@ -1,0 +1,20 @@
+WARNING - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 1715130112: Configuration file parameter 'RESTRICTED_VAL_DEFINITION' can not be reset.
+ERROR - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 207:  Keyword 'MODEL_NOTE_DISPLAY' is not valid.
+ERROR - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 211:  Keyword 'COLOR_WINDOWS' is not valid.
+ERROR - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 214:  Keyword 'THERMO_POSITION_HINT' is not valid.
+ERROR - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 232: Invalid value '32' for keyword 'ENABLE_FSAA'.
+ERROR - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 267: Invalid value 'shading_high' for keyword 'SAVE_MODEL_DISPLAY'.
+ERROR - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 330: Invalid value 'vericut' for keyword 'NCCHECK_TYPE'.
+ERROR - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 355:  Keyword 'ENABLE_POS_NCL_CIRCLE_RECORD' is not valid.
+ERROR - C:\apps\PTC\CREO 4.0\M150\Common Files\text\config.pro, linenum 356:  Keyword 'DISABLE_GHOST_TPATHMOVES_CUTCOM' is not valid.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 207:  Keyword 'MODEL_NOTE_DISPLAY' is not valid.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 211:  Keyword 'COLOR_WINDOWS' is not valid.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 214:  Keyword 'THERMO_POSITION_HINT' is not valid.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 232: Invalid value '32' for keyword 'ENABLE_FSAA'.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 267: Invalid value 'shading_high' for keyword 'SAVE_MODEL_DISPLAY'.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 330: Invalid value 'vericut' for keyword 'NCCHECK_TYPE'.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 355:  Keyword 'ENABLE_POS_NCL_CIRCLE_RECORD' is not valid.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 356:  Keyword 'DISABLE_GHOST_TPATHMOVES_CUTCOM' is not valid.
+ERROR - C:\Users\paraamm\Baker Hughes\Pro_stds - Common\Creo_Configs\MFG_BRZ\DMM_config.pro, linenum 1241:  Keyword 'MAPKEY(CONTINUED)' is not valid.
+Connection restored with License Server(s)  1
+gdi32_comm_shutdown wait for polling thread timed out.

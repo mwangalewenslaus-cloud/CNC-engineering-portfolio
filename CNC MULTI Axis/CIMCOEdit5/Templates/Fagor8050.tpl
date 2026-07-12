@@ -1,0 +1,328 @@
+###############################################################################
+#                                                                             #
+# CIMCO Machine description - DO NOT EDIT !!!                                 #
+#                                                                             #
+############################################################ Who did this? ####
+
+[INIFILEVERSION]
+VERSION		= 200
+
+###############################################################################
+#
+# General machine information
+#
+# DESCRIPTION 	  = Machine description
+# MACHINEID	  = Unique id for machine - Don't change this!!!
+# TYPE		  = Machine type
+# PROTOCOL	  = Name of protocol active on this machine
+# ACTIVE	  = 0=Machine disabled, 1=Machine is activated at startup
+#
+
+[INFO]
+DESCRIPTION     = Fagor 8040/8050/8055
+MACHINEID	= 
+PROTOCOL	= FAGOR50PROTOCOL
+ACTIVE		= Yes
+SERVERID	= 
+FEEDSPEED	= 
+PROTOCOLVER	= 
+
+## CONTROLINFO ################################################################
+
+[CONTROLINFO]
+QUEUECOUNTER	= 1
+SENDDIR		= 
+RECVDIR		= 
+SENDDIRMODE	= No
+RECVDIRMODE	= No
+SYNCSENDRECV	= No
+
+## COMPORTSETTINGS ############################################################
+
+[COMPORTSETTINGS]
+COMPORT		= COM1
+BAUDRATE	= 9600
+PARITY		= NONE
+STOPBITS	= 1
+DATABITS	= 8
+FLOWCONTROL	= NONE
+HWFLOWTYPE	= RTSCTS
+XONCHAR		= 17
+XOFFCHAR	= 19
+PARITYINSERT	= 35
+USEPARITY	= No
+DTR_ENABLED	= Yes
+RTS_ENABLED	= Yes
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATESAFEXOFF	= No
+EMULATEWAITXON	= Yes
+
+## COMPORTSETTINGS DEFAULT ####################################################
+
+[COMPORTSETTINGS DEFAULT]
+COMPORT		= COM1
+BAUDRATE	= 9600
+PARITY		= NONE
+STOPBITS	= 1
+DATABITS	= 8
+FLOWCONTROL	= NONE
+HWFLOWTYPE	= RTSCTS
+XONCHAR		= 17
+XOFFCHAR	= 19
+PARITYINSERT	= 35
+USEPARITY	= No
+DTR_ENABLED	= Yes
+RTS_ENABLED	= Yes
+IGNOREERRORS	= No
+PORTMODE	= 0
+
+## TRANSMIT ###################################################################
+
+[TRANSMIT]
+REMOVEWS	= No
+KEEPWSCOMMENT	= No
+REMOVECOMMENT	= No
+REMOVEEMPTY	= No
+INSERTFILENAME	= Yes
+INSERTWS	= No
+DELETEEXISTING	= No
+USECOMMENT	= Yes
+ADDZEROS	= Yes
+SAVEININCOMING	= No
+FILEEXTENSION	= NC
+SAVEEXTENSION	= NC
+PREFIX		= 
+SUFFIX		= 
+EXTENSIONLIST	= 
+REMOVEPRESUF	= No
+REMOVEEXT	= Yes
+SCANFILES	= Yes
+
+## TRANSMIT DEFAULT ###########################################################
+
+[TRANSMIT DEFAULT]
+REMOVEWS	= No
+KEEPWSCOMMENT	= No
+REMOVECOMMENT	= No
+REMOVEEMPTY	= No
+INSERTFILENAME	= Yes
+INSERTWS	= No
+DELETEEXISTING	= No
+USECOMMENT	= Yes
+ADDZEROS	= Yes
+SAVEININCOMING	= No
+FILEEXTENSION	= NC
+SAVEEXTENSION	= NC
+PREFIX		= 
+SUFFIX		= 
+EXTENSIONLIST	= 
+REMOVEPRESUF	= No
+REMOVEEXT	= Yes
+SCANFILES	= Yes
+
+## TRANSMITDELAYS #############################################################
+
+[TRANSMITDELAYS]
+HANDSHAKEDELAY	= 0
+
+## ENVIRONMENT ################################################################
+
+[ENVIRONMENT]
+ENVLIST		= RECVPRGNAME,INFOPRGNAME,PORTNAME
+RECVPRGNAME	= 
+INFOPRGNAME	= 
+PORTNAME	= Fagor 8050
+
+## PROGRAMPAR #################################################################
+
+[PROGRAMPAR]
+PROGRAMEXE	= Yes
+PROGRAMMOD	= Yes
+IGNOREDELFLAG	= Yes
+
+## TIMERS #####################################################################
+
+[TIMERS]
+TIMERA		= 3000
+TIMERB		= 30000
+TIMERBCC	= 1500
+TIMERDLE	= 1500
+TIMERCAN	= 1500
+
+## COUNTERS ###################################################################
+
+[COUNTERS]
+MAXSDNAKS	= 5
+MAXRNAKS	= 5
+MAXSNOTWALIDACKS= 5
+MAXRNOTWALIDACKS= 5
+
+## FILELIST ###################################################################
+
+[FILELIST]
+MAXFILES	= 10000
+USEPERCENT	= Yes
+DIRLINES	= 15
+DIRCHAR		= P
+DIRSTRING	= DIR
+CURRENTDIR	= $DATA
+
+## REDIRECT ###################################################################
+
+[REDIRECT]
+ACTIVE		= No
+
+## PARAMFILES #################################################################
+
+[PARAMFILES]
+DIRECTORY	= $DATA\PARAM
+USECURRENT	= No
+PARAM_MPG	= PARAM.MPG
+PARAM_MPS	= PARAM.MPS
+PARAM_MP1	= PARAM.MP1
+PARAM_MP2	= PARAM.MP2
+PARAM_PLC	= PARAM.PLC
+PARAM_ORG	= PARAM.ORG
+PARAM_MX1	= PARAM.MX1
+PARAM_MX2	= PARAM.MX2
+PARAM_MX3	= PARAM.MX3
+PARAM_MX4	= PARAM.MX4
+PARAM_MX5	= PARAM.MX5
+PARAM_TLF	= PARAM.TLF
+PARAM_GEO	= PARAM.GEO
+PARAM_TO	= PARAM.TO
+PARAM_TMZ	= PARAM.TMZ
+PARAM_AUM	= PARAM.AUM
+PARAM_ML1	= PARAM.ML1
+PARAM_ML2	= PARAM.ML2
+PARAM_ML3	= PARAM.ML3
+PARAM_ML4	= PARAM.ML4
+PARAM_ML5	= PARAM.ML5
+PARAM_MC1	= PARAM.MC1
+PARAM_GUP	= PARAM.GUP
+PARAM_LP0	= PARAM.LP0
+PARAM_LP1	= PARAM.LP1
+PARAM_LP2	= PARAM.LP2
+PARAM_LP3	= PARAM.LP3
+PARAM_LP4	= PARAM.LP4
+PARAM_LP5	= PARAM.LP5
+PARAM_LP6	= PARAM.LP6
+PARAM_		= PARAM.
+PARAM_TOL	= PARAM.TOL
+
+## PARAMFILES DEFAULT #########################################################
+
+[PARAMFILES DEFAULT]
+DIRECTORY	= $DATA\PARAM
+USECURRENT	= No
+PARAM_MPG	= PARAM.MPG
+PARAM_MPS	= PARAM.MPS
+PARAM_MP1	= PARAM.MP1
+PARAM_MP2	= PARAM.MP2
+PARAM_PLC	= PARAM.PLC
+PARAM_ORG	= PARAM.ORG
+PARAM_MX1	= PARAM.MX1
+PARAM_MX2	= PARAM.MX2
+PARAM_MX3	= PARAM.MX3
+PARAM_MX4	= PARAM.MX4
+PARAM_MX5	= PARAM.MX5
+PARAM_TLF	= PARAM.TLF
+PARAM_GEO	= PARAM.GEO
+PARAM_TO	= PARAM.TO
+PARAM_TMZ	= PARAM.TMZ
+PARAM_AUM	= PARAM.AUM
+PARAM_ML1	= PARAM.ML1
+PARAM_ML2	= PARAM.ML2
+PARAM_ML3	= PARAM.ML3
+PARAM_ML4	= PARAM.ML4
+PARAM_ML5	= PARAM.ML5
+PARAM_MC1	= PARAM.MC1
+PARAM_GUP	= PARAM.GUP
+PARAM_LP0	= PARAM.LP0
+PARAM_LP1	= PARAM.LP1
+PARAM_LP2	= PARAM.LP2
+PARAM_LP3	= PARAM.LP3
+PARAM_LP4	= PARAM.LP4
+PARAM_LP5	= PARAM.LP5
+PARAM_LP6	= PARAM.LP6
+
+## PERMISSIONS ################################################################
+
+[PERMISSIONS]
+DISABLERECEIVE	= No
+ALLOWDELETE	= Yes
+ALLOWCHANGEDIR	= Yes
+
+## PERMISSIONS DEFAULT ########################################################
+
+[PERMISSIONS DEFAULT]
+DISABLERECEIVE	= No
+ALLOWDELETE	= Yes
+ALLOWCHANGEDIR	= Yes
+
+## BACKUP #####################################################################
+
+[BACKUP]
+BACKUPENABLED	= No
+BACKUPDIRS	= No
+BACKUPTYPE	= 0
+BACKUPCOUNT	= 10
+BACKUPNAMING	= 0
+BACKUPDIR	= $BACKUP
+BACKUPPREFIX	= 
+BACKUPPOSTFIX	= 
+BACKUPAUTOCREATE= Yes
+BACKUPPATHMODE	= 0
+BACKUPPATHSUFFIX= 
+
+## BACKUP DEFAULT #############################################################
+
+[BACKUP DEFAULT]
+BACKUPENABLED	= No
+BACKUPTYPE	= 0
+BACKUPNAMING	= 0
+BACKUPCOUNT	= 10
+BACKUPDIR	= $BACKUP
+BACKUPPREFIX	= 
+BACKUPPOSTFIX	= 
+BACKUPAUTOCREATE= Yes
+BACKUPPATHMODE	= 0
+BACKUPPATHSUFFIX= 
+
+## Directories ################################################################
+
+[DIRECTORIES]
+ENVLIST		= MACHINE,LOG,FAILED,DATA,INCOMING,BACKUP,SENDROOT,RECVROOT,TEMPDIR
+MACHINE		= $ROOT\$PORTNAME
+LOG		= $MACHINE\Log
+INCOMING	= $DATA
+FAILED		= $MACHINE\Failed
+DATA		= $MACHINE
+BACKUP		= $MACHINE\Backup
+AUTOCREATE	= Yes
+USERECVROOT	= No
+RECVROOTONLY	= No
+USESENDROOT	= No
+SENDROOTONLY	= No
+USETEMPDIR	= Yes
+USETEMPDIRNET	= No
+SENDEXT		= 
+RECVEXT		= 
+SENDEXTONLY	= No
+RECVEXTONLY	= No
+SENDROOT	= $DATA
+RECVROOT	= $DATA
+TEMPDIR		= $TEMP
+
+## DIRECTORIES DEFAULT ########################################################
+
+[DIRECTORIES DEFAULT]
+ENVLIST		= MACHINE,LOG,FAILED,DATA,INCOMING,BACKUP
+MACHINE		= $ROOT\$PORTNAME
+LOG		= $MACHINE\Log
+INCOMING	= $DATA
+FAILED		= $MACHINE\Failed
+DATA		= $MACHINE
+BACKUP		= $MACHINE\Backup
+AUTOCREATE	= Yes

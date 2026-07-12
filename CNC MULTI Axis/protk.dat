@@ -1,0 +1,9 @@
+name           ipem
+startup        java
+java_app_class com.transcendata.ipemsoa.MainSync
+java_app_start start
+java_app_stop  stop
+allow_stop     true
+delay_start    false
+text_dir       C:\ssplm\tc\v124\prod\ipem\text
+end

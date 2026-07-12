@@ -1,0 +1,154 @@
+###############################################################################
+#                                                                             #
+# CIMCO Machine description - DO NOT EDIT !!!                                 #
+#                                                                             #
+############################################################ Who did this? ####
+
+[INIFILEVERSION]
+VERSION		= 200
+
+## INFO #######################################################################
+
+[INFO]
+DESCRIPTION     = Brother QD-2
+PROTOCOL	= BROTHERPROTOCOL
+ACTIVE		= Yes
+
+## CONTROLINFO ################################################################
+
+[CONTROLINFO]
+QUEUECOUNTER	= 1
+SENDDIR		= 
+RECVDIR		= 
+SENDDIRMODE	= No
+RECVDIRMODE	= No
+SYNCSENDRECV	= No
+
+## COMPORTSETTINGS ############################################################
+
+[COMPORTSETTINGS]
+COMPORT		= COM1
+BAUDRATE	= 4800
+STOPBITS	= 1
+DATABITS	= 8
+PARITY		= NONE
+DTR_ENABLED	= Yes
+RTS_ENABLED	= Yes
+FLOWCONTROL	= NONE
+USEPARITY	= No
+PARITYINSERT	= 
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATESAFEXOFF	= No
+EMULATEWAITXON	= Yes
+HWFLOWTYPE	= 
+CHECKDRIVERERR	= Yes
+WAITOFFLINE	= Yes
+PINGPORTS	= No
+PINGINTERVAL	= 10
+
+## COMPORTSETTINGS DEFAULT ####################################################
+
+[COMPORTSETTINGS DEFAULT]
+COMPORT		= COM1
+BAUDRATE	= 4800
+STOPBITS	= 1
+DATABITS	= 8
+PARITY		= NONE
+DTR_ENABLED	= Yes
+RTS_ENABLED	= Yes
+FLOWCONTROL	= NONE
+USEPARITY	= No
+PARITYINSERT	= 
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATESAFEXOFF	= No
+EMULATEWAITXON	= Yes
+HWFLOWTYPE	= 
+CHECKDRIVERERR	= Yes
+WAITOFFLINE	= Yes
+PINGPORTS	= No
+PINGINTERVAL	= 10
+
+## DIRECTORIES ################################################################
+
+[DIRECTORIES]
+ENVLIST		= MACHINE,LOG,FAILED,DATA,INCOMING,BACKUP,SENDROOT,RECVROOT,TEMPDIR
+MACHINE		= $ROOT\$PORTNAME
+LOG		= $MACHINE\Log
+INCOMING	= $DATA
+FAILED		= $MACHINE\Failed
+DATA		= $MACHINE
+BACKUP		= $MACHINE\Backup
+AUTOCREATE	= Yes
+SENDROOT	= $DATA
+RECVROOT	= $DATA
+TEMPDIR		= $TEMP
+USERECVROOT	= No
+RECVROOTONLY	= No
+USESENDROOT	= No
+SENDROOTONLY	= No
+USETEMPDIR	= Yes
+USETEMPDIRNET	= No
+SENDEXT		= 
+RECVEXT		= 
+SENDEXTONLY	= No
+RECVEXTONLY	= No
+
+## DIRECTORIES DEFAULT ########################################################
+
+[DIRECTORIES DEFAULT]
+ENVLIST		= MACHINE,LOG,FAILED,DATA,INCOMING,BACKUP,SENDROOT,RECVROOT,TEMPDIR
+MACHINE		= $ROOT\$PORTNAME
+LOG		= $MACHINE\Log
+INCOMING	= $DATA
+FAILED		= $MACHINE\Failed
+DATA		= $MACHINE
+BACKUP		= $MACHINE\Backup
+AUTOCREATE	= Yes
+SENDROOT	= $DATA
+RECVROOT	= $DATA
+TEMPDIR		= $TEMP
+USERECVROOT	= No
+RECVROOTONLY	= No
+USESENDROOT	= No
+SENDROOTONLY	= No
+USETEMPDIR	= Yes
+USETEMPDIRNET	= No
+SENDEXT		= 
+RECVEXT		= 
+SENDEXTONLY	= No
+RECVEXTONLY	= No
+
+## PORTSETTINGS ###############################################################
+
+[PORTSETTINGS]
+QD3MODE		= No
+SAVEFAILED	= No
+KEEPFAILEDCOUNT	= 10
+RECVDIR		= $INCOMING
+SENDDIR		= $DATA
+
+## PORTSETTINGS DEFAULT #######################################################
+
+[PORTSETTINGS DEFAULT]
+QD3MODE		= No
+SAVEFAILED	= No
+KEEPFAILEDCOUNT	= 10
+RECVDIR		= $INCOMING
+SENDDIR		= $DATA
+
+## BACKUP #####################################################################
+
+[BACKUP]
+BACKUPENABLED	= No
+BACKUPDIRS	= No
+BACKUPTYPE	= 0
+BACKUPCOUNT	= 10
+BACKUPNAMING	= 0
+BACKUPPATHSUFFIX= 
+BACKUPDIR	= $BACKUP
+BACKUPPREFIX	= 
+BACKUPPOSTFIX	= 
+BACKUPAUTOCREATE= No
+BACKUPPATHMODE	= 0

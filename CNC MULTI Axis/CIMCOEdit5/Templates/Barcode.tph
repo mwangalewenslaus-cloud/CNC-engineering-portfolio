@@ -1,0 +1,90 @@
+###############################################################################
+#                                                                             #
+# CIMCO Terminal description - DO NOT EDIT !!!                                #
+#                                                                             #
+############################################################ Who did this? ####
+
+[INIFILEVERSION]
+VERSION		= 200
+
+## INFO #######################################################################
+
+[INFO]
+SERVERID	= 
+MACHINEID	= 
+DESCRIPTION	= Generic Barcode reader
+PROTOCOL	= TERMINALPROTOCOL
+ACTIVE		= Yes
+ISTERMINAL	= Yes
+PROTOCOLVER	= 
+
+## PORTSETTINGS ###############################################################
+
+[PORTSETTINGS]
+TERMINALTYPE	= Generic Barcode reader
+NOBEEP		= No
+ISBARCODEREADER	= Yes
+
+## PORTSETTINGS DEFAULT #######################################################
+
+[PORTSETTINGS DEFAULT]
+TERMINALTYPE	= Generic Barcode reader
+NOBEEP		= No
+
+## COMPORTSETTINGS ############################################################
+
+[COMPORTSETTINGS]
+COMPORT		= COM1
+BAUDRATE	= 9600
+STOPBITS	= 1
+DATABITS	= 8
+PARITY		= NONE
+DTR_ENABLED	= Yes
+RTS_ENABLED	= Yes
+FLOWCONTROL	= NONE
+USEPARITY	= No
+PARITYINSERT	= 
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATEXOFF	= No
+
+## COMPORTSETTINGS DEFAULT ####################################################
+
+[COMPORTSETTINGS DEFAULT]
+COMPORT		= COM1
+BAUDRATE	= 9600
+STOPBITS	= 1
+DATABITS	= 8
+PARITY		= NONE
+DTR_ENABLED	= Yes
+RTS_ENABLED	= Yes
+FLOWCONTROL	= NONE
+USEPARITY	= No
+PARITYINSERT	= 
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATEXOFF	= No
+
+## SERVERENV ##################################################################
+
+[SERVERENV]
+
+## DIRECTORIES ################################################################
+
+[DIRECTORIES]
+
+## ENVIRONMENT ################################################################
+
+[ENVIRONMENT]
+
+## CONTROLINFO ################################################################
+
+[CONTROLINFO]
+
+## REMOTEREQUEST ##############################################################
+
+[REMOTEREQUEST]
+
+## AUTORECEIVE ################################################################
+
+[AUTORECEIVE]

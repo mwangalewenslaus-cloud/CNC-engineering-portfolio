@@ -1,0 +1,90 @@
+###############################################################################
+#                                                                             #
+# CIMCO Terminal description - DO NOT EDIT !!!                                #
+#                                                                             #
+############################################################ Who did this? ####
+
+[INIFILEVERSION]
+VERSION		= 200
+
+## INFO #######################################################################
+
+[INFO]
+SERVERID	= 
+MACHINEID	= 
+DESCRIPTION	= Machine Monitoring (I-7000 Modules)
+PROTOCOL	= MONITORPROTOCOL
+ACTIVE		= Yes
+ISTERMINAL	= Yes
+ISMONITOR	= Yes
+PROTOCOLVER	= 
+
+## PORTSETTINGS ###############################################################
+
+[PORTSETTINGS]
+TERMINALTYPE	= QTERM-II with 40-key keypad
+NOBEEP		= No
+
+## PORTSETTINGS DEFAULT #######################################################
+
+[PORTSETTINGS DEFAULT]
+TERMINALTYPE	= QTERM-II with 40-key keypad
+NOBEEP		= No
+
+## COMPORTSETTINGS ############################################################
+
+[COMPORTSETTINGS]
+COMPORT		= COM1
+BAUDRATE	= 9600
+STOPBITS	= 1
+DATABITS	= 8
+PARITY		= NONE
+DTR_ENABLED	= Yes
+RTS_ENABLED	= Yes
+FLOWCONTROL	= NONE
+USEPARITY	= No
+PARITYINSERT	= 
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATEXOFF	= No
+
+## COMPORTSETTINGS DEFAULT ####################################################
+
+[COMPORTSETTINGS DEFAULT]
+COMPORT		= COM1
+BAUDRATE	= 9600
+STOPBITS	= 1
+DATABITS	= 8
+PARITY		= NONE
+DTR_ENABLED	= Yes
+RTS_ENABLED	= Yes
+FLOWCONTROL	= NONE
+USEPARITY	= No
+PARITYINSERT	= 
+IGNOREERRORS	= No
+PORTMODE	= 0
+EMULATEXOFF	= No
+
+## SERVERENV ##################################################################
+
+[SERVERENV]
+
+## DIRECTORIES ################################################################
+
+[DIRECTORIES]
+
+## ENVIRONMENT ################################################################
+
+[ENVIRONMENT]
+
+## CONTROLINFO ################################################################
+
+[CONTROLINFO]
+
+## REMOTEREQUEST ##############################################################
+
+[REMOTEREQUEST]
+
+## AUTORECEIVE ################################################################
+
+[AUTORECEIVE]
