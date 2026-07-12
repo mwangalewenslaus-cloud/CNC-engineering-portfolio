@@ -22,18 +22,18 @@ Welcome to my manufacturing engineering workspace. This repository provides live
 ### 1. High-Performance Multi-Axis Machining & Workshop Layouts
 Optimizing structural rigid paths on premium multi-axis DMG machinery.
 <br>
-<img src="./documentation/DMG set up.jpg" width="500" alt="DMG Mori Machining Center">
+<img src="./DMG set up.jpg" width="500" alt="DMG Mori Machining Center">
 
 ### 2. Specialized Tool Profiles & Custom Machine Configurations
 Demonstrating advanced custom setups for complex geometric features and industrial tools.
 <br>
-<img src="./DMG Tools.jpg" width="450" alt="DMG Tool Profiles"> 
+<img src="./DMG tools.jpg" width="450" alt="DMG Tool Profiles"> 
 <img src="./Angle head setup.jpg" width="450" alt="Angle Head Setup">
 
 ### 3. Mazak Control & Clamping Operations
 Conversational interface programming and heavy-duty turned components.
 <br>
-<img src="./Mazak control.mp4" width="450" alt="Mazatrol Interface">
+
 <img src="./Mazak set up.jpg" width="450" alt="Chuck Setup">
 
 ---
