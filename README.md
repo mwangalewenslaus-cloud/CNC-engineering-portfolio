@@ -1,6 +1,6 @@
 
 # 🛠️ Wenslaus | CNC Programming & Multi-Axis Manufacturing Portfolio
-### DMG MORI • Mazak • Fanuc | Conversational & ISO G-Code | Production Optimization
+### DMG MORI • WFL MX80 • Mazak • Fanuc | Conversational & ISO G-Code | Production Optimization
 
 Welcome to my manufacturing engineering workspace. This repository provides live production validation, showcasing high-tolerance CNC programming blocks, complex tooling configurations, and hands-on machining setups verified for industrial applications.
 
@@ -40,13 +40,13 @@ Conversational interface programming and heavy-duty turned components.
 
 ## 📂 Live Production Code Directories
 
-**   **Mazak Modules:** Look inside the folders above to review active .EIA streams, including project 304078.EIA featuring integrated (OIL&GAS) production headers.
+**   **Mazak Modules:** Look inside the folders above to review active .EIA streams, including project MAZAK .EIA featuring integrated (OIL & GAS) production headers.
 **   **ISO Milling:** High-speed machining modules (DMG DMU 125FD-BARREL.NC, CYCLE_TEST.H).
 
 ---
 
 ## 📬 Professional Contact
 
-**   **Location:** Dammam, Eastern Province, Saudi Arabia
+**   **Location:** ABU DHABI, UAE
 **   **Email:** [wmwangale@yahoo.com]**  
 **   **LinkedIn:** [www.linkedin.com/in/wenslaus-mwangale-02a306211]
