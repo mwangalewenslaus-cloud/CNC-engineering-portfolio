@@ -41,7 +41,7 @@ Conversational interface programming and heavy-duty turned components.
 ## 📂 Live Production Code Directories
 
 **   **Mazak Modules:** Look inside the folders above to review active .EIA streams, including project MAZAK .EIA featuring integrated (OIL & GAS) production headers.
-**   **ISO Milling:** High-speed machining modules (DMG DMU 125FD-BARREL.NC, CYCLE_TEST.H).
+**   **ISO Milling:** High-speed machining modules (WFL M80X, DMG DMU 125FD-BARREL.NC, CYCLE_TEST.H).
 
 ---
 
