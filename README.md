@@ -22,7 +22,7 @@ Welcome to my manufacturing engineering workspace. This repository provides live
 ### 1. High-Performance Multi-Axis Machining & Workshop Layouts
 Optimizing structural rigid paths on premium multi-axis DMG machinery.
 <br>
-<img src="./DMG set up.jpg" width="500" alt="DMG Mori Machining Center">
+<img src="./DMG%20set%20up.jpg" width="500" alt="DMG Mori Machining Center">
 
 ### 2. Specialized Tool Profiles & Custom Machine Configurations
 Demonstrating advanced custom setups for complex geometric features and industrial tools.
