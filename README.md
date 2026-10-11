@@ -27,8 +27,8 @@ Optimizing structural rigid paths on premium multi-axis DMG machinery.
 ### 2. Specialized Tool Profiles & Custom Machine Configurations
 Demonstrating advanced custom setups for complex geometric features and industrial tools.
 <br>
-<img src="./DMG tools.jpg" width="450" alt="DMG Tool Profiles"> 
-<img src="./Angle head setup.jpg" width="450" alt="Angle Head Setup">
+<img src="./DMG%20tools.jpg" width="450" alt="DMG Tool Profiles"> 
+<img src="./Angle%20head setup.jpg" width="450" alt="Angle Head Setup">
 
 ### 3. Mazak Control & Clamping Operations
 Conversational interface programming and heavy-duty turned components.
