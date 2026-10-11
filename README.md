@@ -34,7 +34,7 @@ Demonstrating advanced custom setups for complex geometric features and industri
 Conversational interface programming and heavy-duty turned components.
 <br>
 
-<img src="./Mazak set up.jpg" width="450" alt="Chuck Setup">
+<img src="./Mazak%20set%20up.jpg" width="450" alt="Chuck Setup">
 
 ---
 
