@@ -12,6 +12,7 @@ Welcome to my manufacturing engineering workspace. This repository provides live
 
 -   **DMG MORI Systems:** Advanced multi-axis milling, specialized ring groove profiling, angle-head setups, and high-speed toolpath execution.
 -   **Mazak (Mazatrol):** Dialog-based conversational sequences, matrix tool offsets, interactive path verification, and rapid-turn multi-operation setups.
+-   **WFL M80x Systems:** Advanced multi-axis turning, Specialized machine for long heavy components with advanced techncal  operations and high speed toolpath execution and contouring.
 -   **Fanuc & ISO G-Code:** Standard parameterized macro cycles (O9907-O9929), canned loops, and sub-program optimization for high-repetition turning lines.
 -  **Engineering Utilities:** Technical blueprint interpretation, CAD/CAM drafting via **AutoCAD**, and strict geometric dimensioning tolerances.
 
@@ -48,5 +49,6 @@ Conversational interface programming and heavy-duty turned components.
 ## 📬 Professional Contact
 
 **   **Location:** ABU DHABI, UAE
-**   **Email:** [wmwangale@yahoo.com]**  
-**   **LinkedIn:** [www.linkedin.com/in/wenslaus-mwangale-02a306211]
+**   **Email:** [wmwangale@yahoo.com](mailto:wmwangale@yahoo.com) 
+**   **LinkedIn:** [www.linkedin.com/in/wenslaus-mwangale-02a306211](https://linkedin.com)
+**   **Github:** [mwangalewenslaus-cloud/CNC-engineering-portfolio](https://github.com/mwangalewenslaus-cloud/CNC-engineering-portfolio)
